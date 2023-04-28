@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+.nav ul li:hover {
+    text-decoration: underline;
+}
+
+.nav .logo {
+    width: 64px;
+    height: 64px;
+}
+
