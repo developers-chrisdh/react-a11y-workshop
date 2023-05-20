@@ -1,15 +1,17 @@
 @import '../../styles/generics.scss';
 
-$grayDark: #818181;
-$grayLight: #dbdbdb;
-$grayMedium: #aeaeae;
+$headerHeight: 64px;
+$shopHeaderHeight: 92px;
+$footerHeight: 380px;
 
-$greenLight: #849a8e;
+$totalHeight: $headerHeight + $shopHeaderHeight + $footerHeight;
 
 .product-page {
   display: flex;
-  margin-top: 50px;
-  color: $textColor;
+  padding-top: 50px;
+  color: $grayDark;
+  min-height: calc(100vh - $totalHeight);
+  box-sizing: border-box;
 
   .shop-actions {
     width: 100%;
@@ -37,7 +39,7 @@ $greenLight: #849a8e;
     flex-wrap: wrap;
     p {
       padding: 0 5px;
-      color: $grayDark;
+      color: $grayMediumDark;
       margin: 15px 0 5px -40px;
     }
 
@@ -49,7 +51,7 @@ $greenLight: #849a8e;
         border: solid 1px $grayLight;
 
         label {
-          color: $textColor;
+          color: $grayDark;
         }
       }
       margin-bottom: 20px;

@@ -1,5 +1,11 @@
 $mainColor: #56b280;
-$textColor: #272727;
+$grayDark: #272727;
+
+$grayMediumDark: #818181;
+$grayLight: #dbdbdb;
+$grayMedium: #aeaeae;
+
+$greenLight: #849a8e;
 
 @mixin textBig {
   font-size: 26px;
