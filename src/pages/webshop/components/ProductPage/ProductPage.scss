@@ -13,8 +13,17 @@ $grayLight: #aeaeae;
     width: 100%;
   }
 
-  .product-image {
+  .product-information {
     margin-right: 35px;
+    p {
+      font-size: 1.4em;
+      text-align: center;
+      font-weight: bold;
+
+      &:last-child {
+        color: $mainColor;
+      }
+    }
   }
   .product-name {
     @include textBig();
@@ -26,7 +35,7 @@ $grayLight: #aeaeae;
     p {
       padding: 0 5px;
       color: $grayDark;
-      margin-left: -35px;
+      margin: 15px 0 5px -40px;
     }
 
     .purchase-type {
@@ -42,11 +51,18 @@ $grayLight: #aeaeae;
       }
       margin-bottom: 20px;
     }
+    a {
+      text-decoration: none;
+      color: $mainColor;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   .product-price {
     @include textBig();
     color: $mainColor;
-    width: 90%;
+    width: 75%;
   }
   label {
     position: relative;
@@ -93,5 +109,18 @@ $grayLight: #aeaeae;
     width: 16px;
     background-color: $grayMedium;
     border-radius: 50%;
+  }
+
+  button {
+    &:hover {
+      background-color: lighten($mainColor, 3);
+    }
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-color: $mainColor;
+    border-radius: 4px;
+    padding: 8px 0;
+    margin-top: 35px;
   }
 }

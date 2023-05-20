@@ -11,9 +11,15 @@ const ShopHeader = () => (
 
       <nav>
         <ul>
-          <li>Discovery</li>
-          <li>About</li>
-          <li>Contact us</li>
+          <li>
+            <a href="#">Discovery</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
         </ul>
       </nav>
 

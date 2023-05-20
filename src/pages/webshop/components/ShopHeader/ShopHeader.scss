@@ -1,5 +1,7 @@
+@import '../../styles/generics.scss';
+
 .container {
-  max-width: 1080px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -27,6 +29,11 @@ header {
     ul {
       li {
         margin-right: 70px;
+
+        a {
+          text-decoration: none;
+          color: $textColor;
+        }
       }
       list-style: none;
       display: flex;
