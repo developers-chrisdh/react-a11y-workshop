@@ -1,0 +1,7 @@
+$mainColor: #56b280;
+$textColor: #272727;
+
+@mixin textBig {
+  font-size: 26px;
+  font-weight: bold;
+}

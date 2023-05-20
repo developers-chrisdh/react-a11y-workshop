@@ -1,0 +1,97 @@
+@import '../../styles/generics.scss';
+
+$grayDark: #818181;
+$grayMedium: #dbdbdb;
+$grayLight: #aeaeae;
+
+.product-page {
+  display: flex;
+  margin-top: 50px;
+  color: $textColor;
+
+  .shop-actions {
+    width: 100%;
+  }
+
+  .product-image {
+    margin-right: 35px;
+  }
+  .product-name {
+    @include textBig();
+    margin-bottom: 20px;
+  }
+  .purchase-details {
+    display: flex;
+    justify-content: space-between;
+    p {
+      padding: 0 5px;
+      color: $grayDark;
+      margin-left: -35px;
+    }
+
+    .purchase-type {
+      padding: 10px 10px;
+      border-radius: 7px;
+      border: solid 1px #fff;
+      &.selected {
+        border: solid 1px $grayMedium;
+
+        label {
+          color: $textColor;
+        }
+      }
+      margin-bottom: 20px;
+    }
+  }
+  .product-price {
+    @include textBig();
+    color: $mainColor;
+    width: 90%;
+  }
+  label {
+    position: relative;
+    padding-left: 35px;
+    color: $grayLight;
+    cursor: pointer;
+    display: inline-block;
+  }
+  input {
+    &[type='radio'] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      &:focus {
+        & + span {
+          box-shadow: 0 0px 1px 2px #0079ff;
+        }
+      }
+      &:checked {
+        & ~ .radiobutton {
+          &::after {
+            background-color: lighten($mainColor, 16);
+          }
+        }
+      }
+    }
+  }
+  .radiobutton {
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 3px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: white;
+    }
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: $grayMedium;
+    border-radius: 50%;
+  }
+}

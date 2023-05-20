@@ -1,0 +1,36 @@
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: solid 1px #57b38033;
+  padding: 20px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-and-account {
+    a:last-child {
+      margin-left: 24px;
+    }
+  }
+
+  .icon {
+    width: 30px;
+  }
+
+  nav {
+    margin: 0 auto;
+    ul {
+      li {
+        margin-right: 70px;
+      }
+      list-style: none;
+      display: flex;
+      font-weight: bold;
+    }
+  }
+}

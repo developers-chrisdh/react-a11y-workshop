@@ -1,14 +1,12 @@
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <main>
-            <Outlet />
-        </main>
+      <Header />
+      <Outlet />
     </div>
   );
 }
