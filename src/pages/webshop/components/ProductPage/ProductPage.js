@@ -24,10 +24,10 @@ const ProductPage = () => {
       <div className="product-information">
         <img src={productimage} />
         <p>
-          All hand-made with natural soy wax, Candleaf is made for your pleasure
-          moments.
+          Geheel hand gemaakt met natuurlijke sojawas, Candleaf is gemaakt voor
+          jouw pleziermomenten.
         </p>
-        <p>🚚 FREE SHIPPING</p>
+        <p>🚚 GRATIS BEZORGING</p>
       </div>
 
       <div className="shop-actions">
@@ -51,7 +51,7 @@ const ProductPage = () => {
                   id="one-time"
                 />
                 <span className="radiobutton" />
-                One time purchase
+                Eenmalige aankoop
               </label>
             </div>
 
@@ -69,13 +69,13 @@ const ProductPage = () => {
                   id="subscription"
                 />
                 <span className="radiobutton" />
-                Subscribe and delivery every month
+                Abonneer voor maandelijkse bezorging
                 <p>
-                  Subscribe now and get the 10% of discount on every recurring
-                  order. The discount will be applied at checkout.
+                  Abonneer nu en krijg 10% korting op elke bestelling. De
+                  korting wordt toegepast in het afrekenproces.
                 </p>
               </label>
-              <a href="#">Read more.</a>
+              <a href="#">Lees meer.</a>
             </div>
 
             <button onClick={onButtonClick}>

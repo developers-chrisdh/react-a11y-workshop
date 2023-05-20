@@ -12,13 +12,13 @@ const ShopHeader = () => (
       <nav>
         <ul>
           <li>
-            <a href="#">Discovery</a>
+            <a href="#">Ontdek</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#">Over Candleaf</a>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
