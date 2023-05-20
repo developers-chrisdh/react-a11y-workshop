@@ -1,6 +1,7 @@
 import './ProductPage.scss';
 import productimage from '../../assets/product.png';
 import cardWhite from '../../assets/card-white.png';
+import PurchaseOption from './PurchaseOption';
 import { useState } from 'react';
 
 const PURCHASE_TYPE = {
@@ -37,47 +38,25 @@ const ProductPage = () => {
           <div className="product-price">&euro; 9,99</div>
 
           <div className="purchase-actions">
-            <div
-              className={`purchase-type ${
-                purchaseType === PURCHASE_TYPE.oneTime ? 'selected' : ''
-              }`}
-            >
-              <label htmlFor="one-time">
-                <input
-                  type="radio"
-                  value={PURCHASE_TYPE.oneTime}
-                  checked={purchaseType === PURCHASE_TYPE.oneTime}
-                  onChange={onPurchageTypeChange}
-                  id="one-time"
-                />
-                <span className="radiobutton" />
-                Eenmalige aankoop
-              </label>
-            </div>
+            <PurchaseOption
+              value={PURCHASE_TYPE.oneTime}
+              isChecked={purchaseType === PURCHASE_TYPE.oneTime}
+              onPurchageTypeChange={onPurchageTypeChange}
+              title="Eenmalige aankoop"
+            />
 
-            <div
-              className={`purchase-type ${
-                purchaseType === PURCHASE_TYPE.subscription ? 'selected' : ''
-              }`}
-            >
-              <label htmlFor="subscription">
-                <input
-                  type="radio"
-                  value={PURCHASE_TYPE.subscription}
-                  checked={purchaseType === PURCHASE_TYPE.subscription}
-                  onChange={onPurchageTypeChange}
-                  id="subscription"
-                />
-                <span className="radiobutton" />
-                Abonneer voor maandelijkse bezorging
-                <p>
-                  Abonneer nu en krijg 10% korting op elke bestelling. De
-                  korting wordt toegepast in het afrekenproces.
-                </p>
-              </label>
-              <a href="#">Lees meer.</a>
-            </div>
-
+            <PurchaseOption
+              value={PURCHASE_TYPE.subscription}
+              isChecked={purchaseType === PURCHASE_TYPE.subscription}
+              onPurchageTypeChange={onPurchageTypeChange}
+              title="Abonneer voor maandelijkse bezorging"
+              description="Abonneer nu en krijg 10% korting op elke bestelling. De
+              korting wordt toegepast in het afrekenproces."
+              link={{
+                url: '#',
+                label: 'Lees meer.',
+              }}
+            />
             <button onClick={onButtonClick}>
               <img src={cardWhite} />
             </button>

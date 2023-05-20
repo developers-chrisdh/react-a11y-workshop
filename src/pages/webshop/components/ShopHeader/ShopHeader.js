@@ -7,7 +7,9 @@ import account from '../../assets/account.png';
 const ShopHeader = () => (
   <header>
     <div className="container">
-      <img src={logo} />
+      <a href="#">
+        <img src={logo} />
+      </a>
 
       <nav>
         <ul>
