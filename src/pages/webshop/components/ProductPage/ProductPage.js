@@ -36,7 +36,7 @@ const ProductPage = () => {
         <div className="purchase-details">
           <div className="product-price">&euro; 9,99</div>
 
-          <div className="purches-actions">
+          <div className="purchase-actions">
             <div
               className={`purchase-type ${
                 purchaseType === PURCHASE_TYPE.oneTime ? 'selected' : ''
@@ -81,6 +81,26 @@ const ProductPage = () => {
             <button onClick={onButtonClick}>
               <img src={cardWhite} />
             </button>
+          </div>
+
+          <div className="product-details">
+            <div>
+              Was:
+              <span>
+                Sojawas die zorgt voor een rookarme, consistente verbranding
+              </span>
+            </div>
+            <div>
+              Geur:
+              <span>
+                Hoogwaardige ingrediënten met natuurlijke essentiële oliën
+              </span>
+            </div>
+            <div>
+              Brandtijd:<span>70-75 uur</span>
+              Afmeting:<span>10cm x 5cm</span>
+              Gewicht:<span>400g</span>
+            </div>
           </div>
         </div>
       </div>

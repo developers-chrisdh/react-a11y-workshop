@@ -1,8 +1,10 @@
 @import '../../styles/generics.scss';
 
 $grayDark: #818181;
-$grayMedium: #dbdbdb;
-$grayLight: #aeaeae;
+$grayLight: #dbdbdb;
+$grayMedium: #aeaeae;
+
+$greenLight: #849a8e;
 
 .product-page {
   display: flex;
@@ -32,6 +34,7 @@ $grayLight: #aeaeae;
   .purchase-details {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     p {
       padding: 0 5px;
       color: $grayDark;
@@ -43,7 +46,7 @@ $grayLight: #aeaeae;
       border-radius: 7px;
       border: solid 1px #fff;
       &.selected {
-        border: solid 1px $grayMedium;
+        border: solid 1px $grayLight;
 
         label {
           color: $textColor;
@@ -58,16 +61,37 @@ $grayLight: #aeaeae;
         text-decoration: underline;
       }
     }
+
+    .purchase-actions {
+      width: 65%;
+    }
+
+    .product-details {
+      margin-top: 50px;
+      border: solid 1px $grayLight;
+      border-radius: 7px;
+      padding: 10px 15px;
+      width: 100%;
+
+      div {
+        padding: 7px 0;
+      }
+
+      span {
+        color: $greenLight;
+        margin: 0 8px 0 5px;
+      }
+    }
   }
   .product-price {
     @include textBig();
     color: $mainColor;
-    width: 75%;
+    width: 35%;
   }
   label {
     position: relative;
     padding-left: 35px;
-    color: $grayLight;
+    color: $grayMedium;
     cursor: pointer;
     display: inline-block;
   }
@@ -107,7 +131,7 @@ $grayLight: #aeaeae;
     left: 0;
     height: 16px;
     width: 16px;
-    background-color: $grayMedium;
+    background-color: $grayLight;
     border-radius: 50%;
   }
 
