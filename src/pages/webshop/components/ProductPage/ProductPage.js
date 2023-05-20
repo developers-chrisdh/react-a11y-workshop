@@ -26,7 +26,7 @@ const ProductPage = () => {
         <img src={productimage} alt="product afbeelding" />
         <p>
           Geheel hand gemaakt met natuurlijke sojawas, Candleaf is gemaakt voor
-          jouw pleziermomenten.
+          jouw geluksmomenten.
         </p>
         <p>🚚 GRATIS BEZORGING</p>
       </div>

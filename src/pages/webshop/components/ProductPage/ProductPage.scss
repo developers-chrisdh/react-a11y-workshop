@@ -8,7 +8,7 @@ $totalHeight: $headerHeight + $shopHeaderHeight + $footerHeight;
 
 .product-page {
   display: flex;
-  padding-top: 50px;
+  padding: 50px 0 60px;
   color: $grayDark;
   min-height: calc(100vh - $totalHeight);
   box-sizing: border-box;
