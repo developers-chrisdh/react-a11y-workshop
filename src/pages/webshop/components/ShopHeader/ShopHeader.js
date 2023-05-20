@@ -8,7 +8,7 @@ const ShopHeader = () => (
   <header>
     <div className="container">
       <a href="#">
-        <img src={logo} />
+        <img src={logo} alt="logo" />
       </a>
 
       <nav>

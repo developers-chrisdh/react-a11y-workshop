@@ -6,7 +6,7 @@ const ShopFooter = () => (
   <footer>
     <div className="container">
       <div className="candleaf">
-        <img src={footerLogo} />
+        <img src={footerLogo} alt="candleaf logo" />
         <div className="product-text">
           Uw natuurlijke kaars gemaakt{'\n'}voor uw huis en voor uw welzijn.
         </div>
