@@ -12,7 +12,7 @@ const Assignment = () => (
     <Link to="/wcag-rapport">
       <Button>Bekijk het WCAG Rapport</Button>
     </Link>
-    <Link to="/wcag-rapport">
+    <Link to="/website">
       <Button>Bekijk de website</Button>
     </Link>
   </main>
