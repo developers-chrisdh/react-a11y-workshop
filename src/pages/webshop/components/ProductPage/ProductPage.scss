@@ -79,9 +79,6 @@ $totalHeight: $headerHeight + $shopHeaderHeight + $footerHeight;
   }
 
   button {
-    &:hover {
-      background-color: lighten($mainColor, 3);
-    }
     cursor: pointer;
     width: 100%;
     border: none;
@@ -89,5 +86,9 @@ $totalHeight: $headerHeight + $shopHeaderHeight + $footerHeight;
     border-radius: 4px;
     padding: 8px 0;
     margin-top: 35px;
+
+    &:hover {
+      background-color: lighten($mainColor, 3);
+    }
   }
 }

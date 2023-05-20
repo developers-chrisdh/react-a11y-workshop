@@ -4,6 +4,8 @@
   padding: 10px 10px;
   border-radius: 7px;
   border: solid 1px #fff;
+  margin-bottom: 20px;
+
   &.selected {
     border: solid 1px $grayLight;
 
@@ -11,7 +13,6 @@
       color: $grayDark;
     }
   }
-  margin-bottom: 20px;
 
   label {
     position: relative;
@@ -40,6 +41,14 @@
     }
   }
   .radiobutton {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: $grayLight;
+    border-radius: 50%;
+
     &::after {
       content: '';
       position: absolute;
@@ -51,12 +60,5 @@
       border-radius: 50%;
       background: white;
     }
-    position: absolute;
-    top: 2px;
-    left: 0;
-    height: 16px;
-    width: 16px;
-    background-color: $grayLight;
-    border-radius: 50%;
   }
 }

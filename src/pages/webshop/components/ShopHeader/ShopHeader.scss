@@ -26,7 +26,12 @@ header {
 
   nav {
     margin: 0 auto;
+
     ul {
+      list-style: none;
+      display: flex;
+      font-weight: bold;
+
       li {
         margin-right: 70px;
 
@@ -35,9 +40,6 @@ header {
           color: $grayDark;
         }
       }
-      list-style: none;
-      display: flex;
-      font-weight: bold;
     }
   }
 }
