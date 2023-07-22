@@ -11,3 +11,30 @@ $greenLight: #849a8e;
   font-size: 26px;
   font-weight: bold;
 }
+
+@mixin button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: $mainColor;
+  border-radius: 4px;
+  padding: 8px 0;
+  color: white;
+  font-size: 1em;
+  height: auto;
+  font-weight: 600;
+
+  &:hover {
+    background-color: lighten($mainColor, 3);
+  }
+}
+
+@mixin minPageHeight {
+  $headerHeight: 64px;
+  $shopHeaderHeight: 92px;
+  $footerHeight: 380px;
+
+  $totalHeight: $headerHeight + $shopHeaderHeight + $footerHeight;
+
+  min-height: calc(100vh - $totalHeight);
+}

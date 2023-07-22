@@ -4,10 +4,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.scss';
 import App from './App';
 
-import Website from './pages/webshop/components/Webshop';
+import Webshop from './pages/webshop/components/Webshop';
 import Home from './pages/Home';
 import Assignment from './pages/assignment/Assignment';
 import WCAGReport from './pages/assignment/WCAGReport';
+import Checkout from './pages/webshop/components/Checkout/Checkout';
+import ProductPage from './pages/webshop/components/ProductPage/ProductPage';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'website',
-        element: <Website />,
+        element: <ProductPage />,
+      },
+      {
+        path: 'website/checkout',
+        element: <Checkout />,
       },
       {
         path: 'opdracht',

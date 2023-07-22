@@ -1,0 +1,125 @@
+@import '../../styles/generics.scss';
+
+.checkout-page {
+  @include minPageHeight;
+}
+
+.header {
+  padding: 45px 0 65px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: $mainColor;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+h3 {
+  @include textBig();
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-item {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  padding: 25px 0 25px;
+  border-bottom: solid 1px $grayLight;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .product {
+    width: 55%;
+    display: flex;
+
+    img {
+      width: 25%;
+      margin-right: 30px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    span {
+      cursor: pointer;
+      font-weight: 200;
+      text-decoration: none;
+      color: $mainColor;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .price,
+  .quantity,
+  .total,
+  .subtotal,
+  .checkout {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input,
+    button {
+      height: 25px;
+      border: solid 1px $mainColor;
+    }
+  }
+  .quantity {
+    input {
+      border-radius: 0;
+      width: 25px;
+      text-align: center;
+      box-sizing: border-box;
+      border-right: none;
+      border-left: none;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+
+    button {
+      width: 20px;
+      background: none;
+      color: $mainColor;
+      font-size: 1.2em;
+
+      &:first-child {
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-right: none;
+      }
+
+      &:last-child {
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-left: none;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .checkout {
+    button {
+      @include button;
+    }
+  }
+
+  .shipping-info {
+    color: $grayMedium;
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: 20px;
+    font-weight: 200;
+  }
+}

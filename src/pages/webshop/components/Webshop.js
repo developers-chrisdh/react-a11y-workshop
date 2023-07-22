@@ -1,13 +1,12 @@
 import ShopHeader from './ShopHeader/ShopHeader';
-import ProductPage from './ProductPage/ProductPage';
 import ShopFooter from './ShopFooter/ShopFooter';
 
-const Website = () => (
+const Webshop = ({ children }) => (
   <>
     <ShopHeader />
-    <ProductPage />
+    {children}
     <ShopFooter />
   </>
 );
 
-export default Website;
+export default Webshop;

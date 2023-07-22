@@ -1,16 +1,10 @@
 @import '../../styles/generics.scss';
 
-$headerHeight: 64px;
-$shopHeaderHeight: 92px;
-$footerHeight: 380px;
-
-$totalHeight: $headerHeight + $shopHeaderHeight + $footerHeight;
-
 .product-page {
+  @include minPageHeight;
   display: flex;
   padding: 50px 0 60px;
   color: $grayDark;
-  min-height: calc(100vh - $totalHeight);
   box-sizing: border-box;
 
   .shop-actions {
@@ -79,16 +73,7 @@ $totalHeight: $headerHeight + $shopHeaderHeight + $footerHeight;
   }
 
   button {
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    background-color: $mainColor;
-    border-radius: 4px;
-    padding: 8px 0;
     margin-top: 35px;
-
-    &:hover {
-      background-color: lighten($mainColor, 3);
-    }
+    @include button;
   }
 }
