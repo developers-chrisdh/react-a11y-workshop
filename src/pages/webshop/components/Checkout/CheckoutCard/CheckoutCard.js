@@ -1,5 +1,5 @@
-import Webshop from '../Webshop';
-import './Checkout.scss';
+import Webshop from '../../Webshop';
+import './CheckoutCard.scss';
 import CheckoutItem from './CheckoutItem';
 const Checkout = () => {
   return (

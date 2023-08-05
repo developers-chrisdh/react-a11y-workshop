@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import image from '../../assets/product.png';
+import image from '../../../assets/product.png';
 
 const CheckoutItem = ({ price }) => {
   const [totalPice, setTotalPrice] = useState(price);
   const [amount, setAmout] = useState(1);
 
   useEffect(() => {
-    setTotalPrice(price * amount);
+    setTotalPrice((price) => price * amount);
   }, [amount]);
 
   const onIncreaseAmount = () => {
@@ -25,7 +25,7 @@ const CheckoutItem = ({ price }) => {
   return (
     <div className="card-item">
       <div className="product">
-        <img src={image} />
+        <img src={image} alt="" />
         <div className="details">
           <h2>Spiced Mint Candleaf</h2>
           <span>Verwijder</span>

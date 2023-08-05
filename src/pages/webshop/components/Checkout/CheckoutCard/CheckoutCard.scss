@@ -1,4 +1,4 @@
-@import '../../styles/generics.scss';
+@import '../../../styles/generics.scss';
 
 .checkout-page {
   @include minPageHeight;
@@ -8,16 +8,12 @@
   padding: 45px 0 65px;
   text-align: center;
   a {
-    text-decoration: none;
-    color: $mainColor;
-    &:hover {
-      text-decoration: underline;
-    }
+    @include link;
   }
 }
 
 h3 {
-  @include textBig();
+  @include textBig;
   text-align: center;
   margin-bottom: 20px;
 }

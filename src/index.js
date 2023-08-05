@@ -4,12 +4,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.scss';
 import App from './App';
 
-import Webshop from './pages/webshop/components/Webshop';
 import Home from './pages/Home';
 import Assignment from './pages/assignment/Assignment';
 import WCAGReport from './pages/assignment/WCAGReport';
-import Checkout from './pages/webshop/components/Checkout/Checkout';
+import Checkout from './pages/webshop/components/Checkout/CheckoutCard/CheckoutCard';
 import ProductPage from './pages/webshop/components/ProductPage/ProductPage';
+import ShippingInfo from './pages/webshop/components/Checkout/ShippingInfo/ShippingInfo';
 
 const router = createBrowserRouter([
   {
@@ -25,8 +25,12 @@ const router = createBrowserRouter([
         element: <ProductPage />,
       },
       {
-        path: 'website/checkout',
+        path: 'website/checkout/card',
         element: <Checkout />,
+      },
+      {
+        path: 'website/checkout/shipping',
+        element: <ShippingInfo />,
       },
       {
         path: 'opdracht',

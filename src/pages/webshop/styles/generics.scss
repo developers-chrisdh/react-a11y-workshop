@@ -7,6 +7,20 @@ $grayMedium: #aeaeae;
 
 $greenLight: #849a8e;
 
+$grayBackground: #f2f2f2;
+
+@mixin link {
+  text-decoration: none;
+  color: $mainColor;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+@mixin textMedium {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 @mixin textBig {
   font-size: 26px;
   font-weight: bold;
