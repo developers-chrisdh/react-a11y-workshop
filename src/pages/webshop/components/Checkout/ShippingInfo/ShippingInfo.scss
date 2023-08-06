@@ -26,6 +26,10 @@
     &[type='text'] {
       @include textInput;
 
+      &:last-child {
+        margin-right: 0;
+      }
+
       &.input-small {
         width: 44%;
       }
