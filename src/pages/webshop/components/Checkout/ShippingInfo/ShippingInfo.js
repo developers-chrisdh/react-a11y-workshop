@@ -1,8 +1,11 @@
 import Webshop from '../../Webshop';
 import './ShippingInfo.scss';
 import image from '../../../assets/product.png';
+import { useState } from 'react';
 
 const ShippingInfo = () => {
+  const [showDialog, setShowDialog] = useState(false);
+
   return (
     <Webshop>
       <div className="dark-background"></div>
@@ -73,7 +76,7 @@ const ShippingInfo = () => {
           </div>
 
           <div className="coupon">
-            <button>Gebruik coupon</button>
+            <button onClick={() => setShowDialog(true)}>Gebruik coupon</button>
           </div>
 
           <div className="totals">
@@ -94,6 +97,25 @@ const ShippingInfo = () => {
           </div>
         </div>
       </div>
+      {showDialog && (
+        <div className="overlay">
+          <div className="coupon-container">
+            <button
+              className="close-button"
+              aria-label="Sluiten"
+              onClick={() => setShowDialog(false)}
+              tabIndex={-1}
+            >
+              x
+            </button>
+            <h2>Gebruik coupon</h2>
+            <div className="coupon">
+              <input type="text" placeholder="Coupon code" tabIndex={-1} />
+              <button tabIndex={-1}>Voeg toe</button>
+            </div>
+          </div>
+        </div>
+      )}
     </Webshop>
   );
 };
