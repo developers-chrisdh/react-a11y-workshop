@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './PurchaseOption.scss';
 
 const PurchaseOption = (props) => {
@@ -18,7 +19,7 @@ const PurchaseOption = (props) => {
         {title}
         {description && <p>{description}</p>}
       </label>
-      {link && <a href={link.url}>{link.label}</a>}
+      {link && <Link to={link.url}>{link.label}</Link>}
     </div>
   );
 };

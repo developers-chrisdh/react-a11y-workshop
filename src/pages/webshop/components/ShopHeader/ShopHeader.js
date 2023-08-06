@@ -3,35 +3,36 @@ import './ShopHeader.scss';
 import logo from '../../assets/logo.png';
 import card from '../../assets/card.png';
 import account from '../../assets/account.png';
+import { Link } from 'react-router-dom';
 
 const ShopHeader = () => (
   <header>
     <div className="container">
-      <a href="#">
+      <Link to="/website">
         <img src={logo} alt="logo" />
-      </a>
+      </Link>
 
       <nav>
         <ul>
           <li>
-            <a href="#">Ontdek</a>
+            <Link to="#">Ontdek</Link>
           </li>
           <li>
-            <a href="#">Over Candleaf</a>
+            <Link to="#">Over Candleaf</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="#">Contact</Link>
           </li>
         </ul>
       </nav>
 
       <div className="card-and-account">
-        <a href="#">
+        <Link to="#">
           <img src={account} className="icon" alt="account"></img>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="#">
           <img src={card} className="icon" alt="card"></img>
-        </a>
+        </Link>
       </div>
     </div>
   </header>

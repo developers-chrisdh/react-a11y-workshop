@@ -2,6 +2,7 @@ import Webshop from '../../Webshop';
 import './ShippingInfo.scss';
 import image from '../../../assets/product.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ShippingInfo = () => {
   const [showDialog, setShowDialog] = useState(false);
@@ -16,7 +17,7 @@ const ShippingInfo = () => {
               <div className="form-item">
                 <h2>Contact</h2>
                 <div>
-                  Heb je een account? <a href="#">Login</a>
+                  Heb je een account? <Link to="#">Login</Link>
                 </div>
               </div>
               <input type="text" placeholder="Email of telefoonnummer" />
@@ -60,7 +61,7 @@ const ShippingInfo = () => {
             </div>
 
             <div className="actions">
-              <a href="#">Terug naar winkelwagen</a>
+              <Link to="#">Terug naar winkelwagen</Link>
               <button>Afrekenen</button>
             </div>
           </form>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Webshop from '../../Webshop';
 import './CheckoutCard.scss';
 import CheckoutItem from './CheckoutItem';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { formatNumber } from '../../../utils/numberUtils';
 
 const Checkout = () => {
@@ -13,7 +13,7 @@ const Checkout = () => {
       <div className="container checkout-page">
         <div className="header">
           <h3>Winkelwagen</h3>
-          <a href="/webshop">Verder winkelen</a>
+          <Link to="/webshop">Verder winkelen</Link>
         </div>
 
         <div className="card">

@@ -1,6 +1,7 @@
 import './ShopFooter.scss';
 
 import footerLogo from '../../assets/footer-logo.png';
+import { Link } from 'react-router-dom';
 
 const ShopFooter = () => (
   <footer>
@@ -15,47 +16,47 @@ const ShopFooter = () => (
       <nav>
         <ul>
           <li>
-            <a href="#">Ontdek</a>
+            <Link to="#">Ontdek</Link>
           </li>
 
           <li>
-            <a href="#">Nieuw seizoen</a>
+            <Link to="#">Nieuw seizoen</Link>
           </li>
 
           <li>
-            <a href="#">Meest gezocht</a>
+            <Link to="#">Meest gezocht</Link>
           </li>
 
           <li>
-            <a href="#">Meest verkocht</a>
+            <Link to="#">Meest verkocht</Link>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="#">Over Candleaf</a>
+            <Link to="#">Over Candleaf</Link>
           </li>
           <li>
-            <a href="#">Help</a>
+            <Link to="#">Help</Link>
           </li>
           <li>
-            <a href="#">Verzending</a>
+            <Link to="#">Verzending</Link>
           </li>
           <li>
-            <a href="#">Winkels</a>
+            <Link to="#">Winkels</Link>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="#">Info</a>
+            <Link to="#">Info</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="#">Contact</Link>
           </li>
           <li>
-            <a href="#">Privacy beleid</a>
+            <Link to="#">Privacy beleid</Link>
           </li>
           <li>
-            <a href="#">Algemene voorwaarden</a>
+            <Link to="#">Algemene voorwaarden</Link>
           </li>
         </ul>
       </nav>
