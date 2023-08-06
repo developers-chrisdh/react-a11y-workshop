@@ -4,6 +4,7 @@ import cardWhite from '../../assets/card-white.png';
 import PurchaseOption from './PurchaseOption';
 import { useState } from 'react';
 import Webshop from '../Webshop';
+import { useNavigate } from 'react-router-dom';
 
 const PURCHASE_TYPE = {
   oneTime: 'oneTime',
@@ -11,6 +12,7 @@ const PURCHASE_TYPE = {
 };
 
 const ProductPage = () => {
+  const navigate = useNavigate();
   const [purchaseType, setPurchaseType] = useState(PURCHASE_TYPE.oneTime);
 
   const onPurchageTypeChange = (event) => {
@@ -18,7 +20,7 @@ const ProductPage = () => {
   };
 
   const onButtonClick = () => {
-    console.log('click');
+    navigate('/website/checkout/card');
   };
 
   return (

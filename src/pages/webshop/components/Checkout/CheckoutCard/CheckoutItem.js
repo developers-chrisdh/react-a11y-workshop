@@ -1,13 +1,18 @@
 import { useEffect, useState } from 'react';
 import image from '../../../assets/product.png';
+import { formatNumber } from '../../../utils/numberUtils';
 
-const CheckoutItem = ({ price }) => {
+const CheckoutItem = ({ price, onTotalPriceChange }) => {
   const [totalPice, setTotalPrice] = useState(price);
   const [amount, setAmout] = useState(1);
 
   useEffect(() => {
-    setTotalPrice((price) => price * amount);
-  }, [amount]);
+    setTotalPrice(price * amount);
+  }, [price, amount]);
+
+  useEffect(() => {
+    onTotalPriceChange(totalPice);
+  }, [totalPice, onTotalPriceChange]);
 
   const onIncreaseAmount = () => {
     setAmout((amount) => amount + 1);
@@ -33,15 +38,15 @@ const CheckoutItem = ({ price }) => {
       </div>
       <div className="price">€ 9,99</div>
       <div className="quantity">
-        <button onClick={onIncreaseAmount}>+</button>
+        <button onClick={onDecreaseAmount}>-</button>
         <input
           type="number"
           onChange={(event) => setAmout(Number(event.target.value))}
           value={amount}
         />
-        <button onClick={onDecreaseAmount}>-</button>
+        <button onClick={onIncreaseAmount}>+</button>
       </div>
-      <div className="total">€ {totalPice}</div>
+      <div className="total">€ {formatNumber(totalPice)}</div>
     </div>
   );
 };

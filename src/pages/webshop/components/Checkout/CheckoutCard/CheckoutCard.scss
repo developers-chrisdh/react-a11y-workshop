@@ -2,6 +2,8 @@
 
 .checkout-page {
   @include minPageHeight;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -94,13 +96,15 @@ h3 {
         border-top-left-radius: 0%;
         border-bottom-left-radius: 0%;
         border-right: none;
+        padding-left: 8px;
+        padding-top: 0;
       }
 
       &:last-child {
         border-top-right-radius: 0%;
         border-bottom-right-radius: 0%;
         border-left: none;
-        padding-top: 0;
+        padding-right: 15px;
       }
     }
   }

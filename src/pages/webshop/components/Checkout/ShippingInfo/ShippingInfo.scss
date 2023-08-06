@@ -2,7 +2,7 @@
 
 .dark-background {
   background: $grayBackground;
-  height: 75vh;
+  height: 80vh;
   width: 50vw;
   z-index: -1;
   position: absolute;
@@ -11,6 +11,8 @@
 
 .shipping-container {
   @include minPageHeight;
+  padding-bottom: 60px;
+  box-sizing: border-box;
   display: flex;
   h2 {
     @include textMedium;
