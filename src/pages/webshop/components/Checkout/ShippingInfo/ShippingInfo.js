@@ -23,7 +23,7 @@ const ShippingInfo = () => {
               <input type="text" placeholder="Email of telefoonnummer" />
               <input type="checkbox" id="newsletter" />{' '}
               <label htmlFor="newsletter">
-                Ik wil de Candleaf nieuwsbrief intvangen voor 10% korting
+                Ik wil de Candleaf nieuwsbrief ontvangen voor 10% korting
               </label>
             </div>
 
