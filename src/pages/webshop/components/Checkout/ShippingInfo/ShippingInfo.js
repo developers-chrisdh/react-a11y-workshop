@@ -1,12 +1,13 @@
 import Webshop from '../../Webshop';
 import './ShippingInfo.scss';
+import image from '../../../assets/product.png';
 
 const ShippingInfo = () => {
   return (
     <Webshop>
       <div className="dark-background"></div>
       <div className="container shipping-container">
-        <div className="wrapper">
+        <div className="wrapper shipping">
           <form action="">
             <div className="contact-info">
               <div className="form-item">
@@ -61,7 +62,37 @@ const ShippingInfo = () => {
             </div>
           </form>
         </div>
-        <div className="wrapper"></div>
+        <div className="wrapper shopping-list">
+          <div className="products">
+            <img src={image} alt="" />
+            <div>
+              <div className="product-name">Spiced Mint Candleaf</div>
+
+              <div className="price">€ 9,99</div>
+            </div>
+          </div>
+
+          <div className="coupon">
+            <button>Gebruik coupon</button>
+          </div>
+
+          <div className="totals">
+            <div>
+              <div>Subtotaal</div>
+              <div>€ 9,99</div>
+            </div>
+            <div>
+              <div>Verzending</div>
+              <div>Berekend in de volgende stap</div>
+            </div>
+          </div>
+          <div className="total">
+            <div>
+              <div>Totaal</div>
+              <div className="price">€ 9 ,99</div>
+            </div>
+          </div>
+        </div>
       </div>
     </Webshop>
   );
