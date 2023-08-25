@@ -1,0 +1,65 @@
+$mainColor: #56b280;
+$grayDark: #272727;
+
+$grayMediumDark: #818181;
+$grayLight: #dbdbdb;
+$grayMedium: #aeaeae;
+
+$greenLight: #849a8e;
+
+$grayBackground: #f2f2f2;
+
+@mixin link {
+  text-decoration: none;
+  color: $mainColor;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+@mixin textMedium {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@mixin textBig {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+@mixin button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: $mainColor;
+  border-radius: 4px;
+  padding: 8px 0;
+  color: white;
+  font-size: 1em;
+  height: auto;
+  font-weight: 600;
+  transition: background-color 0.1s;
+
+  &:hover {
+    background-color: lighten($mainColor, 3);
+  }
+}
+
+@mixin minPageHeight {
+  $headerHeight: 64px;
+  $shopHeaderHeight: 92px;
+  $footerHeight: 380px;
+
+  $totalHeight: $headerHeight + $shopHeaderHeight + $footerHeight;
+
+  min-height: calc(100vh - $totalHeight);
+}
+
+@mixin textInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border: solid 1px $grayMedium;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,198 @@
+@import '../../../styles/generics.scss';
+
+.dark-background {
+  background: $grayBackground;
+  height: 80vh;
+  width: 50vw;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+}
+
+.shipping-container {
+  @include minPageHeight;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  display: flex;
+  h2 {
+    @include textMedium;
+  }
+
+  a {
+    @include link;
+  }
+
+  input {
+    &[type='text'] {
+      @include textInput;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.input-small {
+        width: 44%;
+      }
+    }
+
+    &#save {
+      & + label {
+        color: $grayMedium;
+      }
+    }
+  }
+
+  .wrapper {
+    width: 50%;
+    box-sizing: border-box;
+
+    padding: 30px 0;
+
+    &:first-child {
+      padding-right: 40px;
+    }
+    &:last-child {
+      padding-left: 40px;
+    }
+
+    img {
+      width: 160px;
+    }
+  }
+
+  .contact-info {
+    a {
+      margin-left: 4px;
+    }
+  }
+
+  .form-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .shipping-info {
+    div {
+      display: flex;
+    }
+  }
+
+  .actions {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shipping {
+    button {
+      @include button;
+      width: 24%;
+      padding: 8px 21px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .shopping-list {
+    div {
+      margin-bottom: 15px;
+    }
+  }
+  .coupon {
+    border-top: solid 1px $grayLight;
+    border-bottom: solid 1px $grayLight;
+    padding: 10px 0;
+
+    button {
+      color: $mainColor;
+      border: none;
+      font-weight: 600;
+      background: none;
+      padding: 0;
+      line-height: 21px;
+      cursor: pointer;
+      transition: opacity 0.1s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .products {
+    display: flex;
+    justify-content: space-between;
+
+    .price {
+      color: $mainColor;
+      font-size: 1.3em;
+      margin-top: 15px;
+    }
+  }
+  .total,
+  .totals {
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+    .price {
+      font-size: 1.5em;
+    }
+  }
+  .total {
+    border-top: solid 1px $grayLight;
+    padding-top: 20px;
+  }
+  .price,
+  .product-name {
+    font-weight: 600;
+  }
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #0000004f;
+  top: 0;
+  left: 0;
+  display: flex;
+
+  .coupon-container {
+    background: white;
+    width: 470px;
+    padding: 20px 40px 30px;
+    margin: auto auto auto;
+    border-radius: 5px;
+    box-shadow: 1px 2px 9px -1px #00000042;
+    position: relative;
+    top: -8%;
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  .coupon {
+    display: flex;
+  }
+
+  button {
+    @include button;
+    height: 40px;
+    width: 150px;
+
+    &.close-button {
+      width: 20px;
+      height: 20px;
+      line-height: 0;
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      background: none;
+      color: black;
+    }
+  }
+
+  input {
+    @include textInput;
+  }
+}

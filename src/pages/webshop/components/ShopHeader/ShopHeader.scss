@@ -1,0 +1,45 @@
+@import '../../styles/generics.scss';
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: solid 1px $grayLight;
+  padding: 20px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-and-account {
+    a:last-child {
+      margin-left: 24px;
+    }
+  }
+
+  .icon {
+    width: 30px;
+  }
+
+  nav {
+    margin: 0 auto;
+
+    ul {
+      list-style: none;
+      display: flex;
+      font-weight: bold;
+
+      li {
+        margin-right: 70px;
+
+        a {
+          text-decoration: none;
+          color: $grayDark;
+        }
+      }
+    }
+  }
+}
