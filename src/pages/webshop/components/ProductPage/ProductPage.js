@@ -20,7 +20,7 @@ const ProductPage = () => {
   };
 
   const onButtonClick = () => {
-    navigate('/website/checkout/card');
+    navigate('/website/checkout/cart');
   };
 
   return (
