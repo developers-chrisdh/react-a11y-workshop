@@ -20,3 +20,32 @@
   max-width: 1080px;
   margin: 0 auto;
 }
+
+.card.program {
+  max-width: 400px;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  h2 {
+    margin-top: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      display: flex;
+      padding: 4px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      span {
+        font-weight: 800;
+        margin-left: auto;
+      }
+    }
+  }
+}

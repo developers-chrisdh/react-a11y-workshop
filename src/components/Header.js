@@ -1,22 +1,25 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../logo.svg';
-import './Header.css';
+import './Header.scss';
 
 const Header = () => (
-    <nav className="nav">
-        <img src={logo} className="logo" alt="logo" width={100}/>
-        <ul>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/opdracht">Opdracht</Link>
-            </li>
-            <li>
-                <Link to="/website">Website</Link>
-            </li>
-        </ul>
-    </nav>
+  <nav className="nav">
+    <img src={logo} className="logo" alt="logo" width={100} />
+    <ul>
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/opdracht">Opdracht</NavLink>
+      </li>
+      <li>
+        <NavLink to="/website">Website</NavLink>
+      </li>
+      <li>
+        <NavLink to="/wcag-rapport">WCAG Rapport</NavLink>
+      </li>
+    </ul>
+  </nav>
 );
 
 export default Header;
