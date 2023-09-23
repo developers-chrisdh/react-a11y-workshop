@@ -86,7 +86,7 @@ const ProductPage = () => {
                   </td>
                 </tr>
               </table>
-              <table style={{ display: 'flex' }}>
+              <table className="table-horizontal">
                 <tr>
                   <th>Brandtijd:</th>
                   <td>
