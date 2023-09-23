@@ -15,8 +15,8 @@ const ProductPage = () => {
   const navigate = useNavigate();
   const [purchaseType, setPurchaseType] = useState(PURCHASE_TYPE.oneTime);
 
-  const onPurchageTypeChange = (event) => {
-    setPurchaseType(event.target.value);
+  const onPurchageTypeChange = (value) => {
+    setPurchaseType(value);
   };
 
   const onButtonClick = () => {
