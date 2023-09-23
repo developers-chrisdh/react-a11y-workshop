@@ -9,19 +9,37 @@
   &.selected {
     border: solid 1px $grayLight;
 
-    .radio-item {
+    label {
       color: $grayDark;
     }
   }
 
-  .radio-item {
+  label {
     position: relative;
     padding-left: 35px;
     color: $grayMedium;
     cursor: pointer;
     display: inline-block;
   }
-
+  input {
+    &[type='radio'] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      &:focus {
+        & + span {
+          box-shadow: 0 0px 1px 2px #0079ff;
+        }
+      }
+      &:checked {
+        & ~ .radiobutton {
+          &::after {
+            background-color: lighten($mainColor, 16);
+          }
+        }
+      }
+    }
+  }
   .radiobutton {
     position: absolute;
     top: 2px;
@@ -30,12 +48,6 @@
     width: 16px;
     background-color: $grayLight;
     border-radius: 50%;
-
-    &.checked {
-      &::after {
-        background-color: lighten($mainColor, 16);
-      }
-    }
 
     &::after {
       content: '';
