@@ -6,19 +6,15 @@ const PurchaseOption = (props) => {
     props;
 
   return (
-    <div className={`purchase-type ${isChecked ? 'selected' : ''}`}>
-      <label htmlFor={value}>
-        <input
-          type="radio"
-          value={value}
-          checked={isChecked}
-          onChange={onPurchageTypeChange}
-          id={value}
-        />
-        <span className="radiobutton" />
+    <div
+      className={`purchase-type ${isChecked ? 'selected' : ''}`}
+      onClick={() => onPurchageTypeChange(value)}
+    >
+      <div className="radio-item" htmlFor={value}>
+        <span className={`radiobutton ${isChecked ? 'checked' : ''}`} />
         {title}
         {description && <p>{description}</p>}
-      </label>
+      </div>
       {link && <Link to={link.url}>{link.label}</Link>}
     </div>
   );
