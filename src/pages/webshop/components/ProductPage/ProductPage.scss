@@ -1,75 +1,75 @@
-@import '../../styles/generics.scss';
+// @import '../../styles/generics.scss';
 
-.product-page {
-  @include minPageHeight;
-  display: flex;
-  padding: 50px 0 60px;
-  color: $grayDark;
-  box-sizing: border-box;
+// .product-page {
+//   @include minPageHeight;
+//   display: flex;
+//   padding: 50px 0 60px;
+//   color: $grayDark;
+//   box-sizing: border-box;
 
-  .shop-actions {
-    width: 100%;
-  }
+//   .shop-actions {
+//     width: 100%;
+//   }
 
-  .product-information {
-    margin-right: 35px;
-    p {
-      font-size: 1.4em;
-      text-align: center;
-      font-weight: bold;
+//   .product-information {
+//     margin-right: 35px;
+//     p {
+//       font-size: 1.4em;
+//       text-align: center;
+//       font-weight: bold;
 
-      &:last-child {
-        color: $mainColor;
-      }
-    }
-  }
-  .product-name {
-    @include textBig();
-    margin-bottom: 20px;
-  }
-  .purchase-details {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    p {
-      padding: 0 5px;
-      color: $grayMediumDark;
-      margin: 15px 0 5px -40px;
-    }
+//       &:last-child {
+//         color: $mainColor;
+//       }
+//     }
+//   }
+//   .product-name {
+//     @include textBig();
+//     margin-bottom: 20px;
+//   }
+//   .purchase-details {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     p {
+//       padding: 0 5px;
+//       color: $grayMediumDark;
+//       margin: 15px 0 5px -40px;
+//     }
 
-    a {
-      @include link;
-    }
+//     a {
+//       @include link;
+//     }
 
-    .purchase-actions {
-      width: 65%;
-    }
+//     .purchase-actions {
+//       width: 65%;
+//     }
 
-    .product-details {
-      margin-top: 50px;
-      border: solid 1px $grayLight;
-      border-radius: 7px;
-      padding: 10px 15px;
-      width: 100%;
+//     .product-details {
+//       margin-top: 50px;
+//       border: solid 1px $grayLight;
+//       border-radius: 7px;
+//       padding: 10px 15px;
+//       width: 100%;
 
-      div {
-        padding: 7px 0;
-      }
+//       div {
+//         padding: 7px 0;
+//       }
 
-      span {
-        color: $greenLight;
-        margin: 0 8px 0 5px;
-      }
-    }
-  }
-  .product-price {
-    @include textBig();
-    color: $mainColor;
-    width: 35%;
-  }
+//       span {
+//         color: $greenLight;
+//         margin: 0 8px 0 5px;
+//       }
+//     }
+//   }
+//   .product-price {
+//     @include textBig();
+//     color: $mainColor;
+//     width: 35%;
+//   }
 
-  button {
-    margin-top: 35px;
-    @include button;
-  }
-}
+//   button {
+//     margin-top: 35px;
+//     @include button;
+//   }
+// }
