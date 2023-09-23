@@ -27,7 +27,7 @@ const ProductPage = () => {
     <Webshop>
       <div className="container product-page">
         <div className="product-information">
-          <img src={productimage} alt="product afbeelding" />
+          <img src={productimage} alt="" />
           <p>
             Geheel hand gemaakt met natuurlijke sojawas, Candleaf is gemaakt
             voor jouw geluksmomenten.
