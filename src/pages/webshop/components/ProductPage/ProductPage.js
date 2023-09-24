@@ -58,7 +58,7 @@ const ProductPage = () => {
               korting wordt toegepast in het afrekenproces."
                 link={{
                   url: '#',
-                  label: 'Lees meer.',
+                  label: 'Lees meer over het abonnement.',
                 }}
               />
               <button onClick={onButtonClick}>
