@@ -12,7 +12,7 @@ const Checkout = () => {
     <Webshop>
       <div className="container checkout-page">
         <div className="header">
-          <h3>Winkelwagen</h3>
+          <h1>Winkelwagen</h1>
           <Link to="/webshop">Verder winkelen</Link>
         </div>
 

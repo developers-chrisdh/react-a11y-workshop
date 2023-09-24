@@ -32,7 +32,7 @@ const CheckoutItem = ({ price, onTotalPriceChange }) => {
       <div className="product">
         <img src={image} alt="" />
         <div className="details">
-          <h2>Spiced Mint Candleaf</h2>
+          <div className="product-name">Spiced Mint Candleaf</div>
           <span>Verwijder</span>
         </div>
       </div>
