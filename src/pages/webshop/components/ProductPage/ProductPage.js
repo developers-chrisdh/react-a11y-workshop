@@ -67,23 +67,41 @@ const ProductPage = () => {
             </div>
 
             <div className="product-details">
-              <div>
-                Was:
-                <span>
-                  Sojawas die zorgt voor een rookarme, consistente verbranding
-                </span>
-              </div>
-              <div>
-                Geur:
-                <span>
-                  Hoogwaardige ingrediënten met natuurlijke essentiële oliën
-                </span>
-              </div>
-              <div>
-                Brandtijd:<span>70-75 uur</span>
-                Afmeting:<span>10cm x 5cm</span>
-                Gewicht:<span>400g</span>
-              </div>
+              <table>
+                <tr>
+                  <td>Was:</td>
+                  <td>
+                    <span>
+                      Sojawas die zorgt voor een rookarme, consistente
+                      verbranding
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Geur:</td>
+                  <td>
+                    <span>
+                      Hoogwaardige ingrediënten met natuurlijke essentiële oliën
+                    </span>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <td>Brandtijd:</td>
+                  <td>
+                    <span>70-75 uur</span>
+                  </td>
+                  <td>Afmeting:</td>
+                  <td>
+                    <span>10cm x 5cm</span>
+                  </td>
+                  <td>Gewicht:</td>
+                  <td>
+                    <span>400g</span>
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
