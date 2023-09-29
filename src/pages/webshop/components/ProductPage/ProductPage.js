@@ -62,7 +62,7 @@ const ProductPage = () => {
                 }}
               />
               <button onClick={onButtonClick}>
-                <img src={cardWhite} />
+                <img src={cardWhite} alt="Voeg toe aan winkelwagen" />
               </button>
             </div>
 
