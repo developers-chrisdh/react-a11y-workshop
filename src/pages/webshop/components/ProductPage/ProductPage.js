@@ -36,7 +36,7 @@ const ProductPage = () => {
         </div>
 
         <div className="shop-actions">
-          <div className="product-name">Spaced Mint Candleaf</div>
+          <h1 className="product-name">Spaced Mint Candleaf</h1>
 
           <div className="purchase-details">
             <div className="product-price">&euro; 9,99</div>

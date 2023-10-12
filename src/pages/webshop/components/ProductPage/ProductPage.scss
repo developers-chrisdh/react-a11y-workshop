@@ -25,7 +25,7 @@
   }
   .product-name {
     @include textBig();
-    margin-bottom: 20px;
+    margin: 0 0 20px;
   }
   .purchase-details {
     display: flex;
