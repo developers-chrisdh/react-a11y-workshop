@@ -30,34 +30,51 @@ const ShippingInfo = () => {
             <div className="shipping-info">
               <h2>Verzend adres</h2>
               <div>
-                <input type="text" placeholder="Voornaam" />
-                <input type="text" placeholder="Achternaam" />
+                <div>
+                  <label htmlFor="firstname">Voornaam</label>
+                  <input type="text" id="firstname" />
+                </div>
+                <div>
+                  <label htmlFor="lastname">Achternaam</label>
+                  <input type="text" id="lastname" />
+                </div>
               </div>
               <div>
-                <input type="text" placeholder="Postcode" />
-                <input
-                  type="text"
-                  placeholder="Huisnummer"
-                  className="input-small"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Toevoeging"
-                  className="input-small"
-                />
+                <div>
+                  <label htmlFor="zipcode">Postcode</label>
+                  <input type="text" id="zipcode" />
+                </div>
+                <div className="input-small">
+                  <label htmlFor="house-number">Huisnummer</label>
+                  <input type="text" id="house-number" />
+                </div>
+                <div className="input-small">
+                  <label htmlFor="addition">Toevoeging</label>
+                  <input type="text" id="addition" />
+                </div>
               </div>
               <div>
-                <input type="text" placeholder="Straatnaam" />
-                <input type="text" placeholder="Plaats" />
+                <div>
+                  <label htmlFor="street">Straatnaam</label>
+                  <input type="text" id="street" />
+                </div>
+                <div>
+                  <label htmlFor="city">Plaats</label>
+                  <input type="text" id="city" />
+                </div>
               </div>
               <div>
-                <input type="text" placeholder="Opmerking" />
+                <div>
+                  <label htmlFor="remark">Opmerking</label>
+                  <input type="text" id="remark" />
+                </div>
               </div>
-              <input type="checkbox" id="save" />
-              <label htmlFor="save">
-                Sla deze informatie op voor toekomstige bestellingen
-              </label>
+              <div>
+                <input type="checkbox" id="save" />
+                <label htmlFor="save">
+                  Sla deze informatie op voor toekomstige bestellingen
+                </label>
+              </div>
             </div>
 
             <div className="actions">

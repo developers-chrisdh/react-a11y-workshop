@@ -29,10 +29,6 @@
       &:last-child {
         margin-right: 0;
       }
-
-      &.input-small {
-        width: 44%;
-      }
     }
 
     &#save {
@@ -73,8 +69,20 @@
   }
 
   .shipping-info {
-    div {
+    > * > div {
+      margin-right: 10px;
+      width: 100%;
+
+      &.input-small {
+        width: 48%;
+      }
+    }
+    > div {
       display: flex;
+    }
+    label {
+      margin: 0 0 4px;
+      display: block;
     }
   }
 
