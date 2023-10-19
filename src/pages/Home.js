@@ -25,13 +25,22 @@ export const Home = () => (
             Introductie <span>15 min</span>
           </li>
           <li>
-            Opdracht deel 1 <span>30 min</span>
+            Opdracht 1: Zoek de a11y fouten in de webshop. <span>30 min</span>
           </li>
           <li>
-            Pauze <span>15 min</span>
+            Opdracht 1: Bespreken <span>15 min</span>
           </li>
           <li>
-            Opdracht deel 2 <span>30 min</span>
+            Pauze / Avondeten <span>60 min</span>
+          </li>
+          <li>
+            Opdracht 2: Introductie WCGA Rapport <span>15 min</span>
+          </li>
+          <li>
+            Opdracht 2: WCAG overtredingen oplossen <span>60 min</span>
+          </li>
+          <li>
+            Nabespreking <span>15 min</span>
           </li>
         </ul>
       </div>
