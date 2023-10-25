@@ -14,8 +14,8 @@ export const Home = () => (
         auditieve, motorische en cognitieve uitdagingen.
       </p>
       <p>
-        <Link to="/opdracht">
-          <Button>Ga naar de opdracht</Button>
+        <Link to="/intro">
+          <Button>Ga naar de introductie</Button>
         </Link>
       </p>
       <div className="card program">
@@ -41,6 +41,21 @@ export const Home = () => (
           </li>
           <li>
             Nabespreking <span>15 min</span>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Nuttige links</h2>
+        <ul>
+          <li>
+            <a href="https://www.w3.org/TR/WCAG21/" target="_blank">https://www.w3.org/TR/WCAG21/</a>
+          </li>
+          <li>
+            <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Contrast checker tool</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Web_accessibility" target="_blank">Web accessibility op wikipedia</a>
           </li>
         </ul>
       </div>

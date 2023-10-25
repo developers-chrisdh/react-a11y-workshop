@@ -31,8 +31,7 @@ const WCAGReport = () => (
         id="2"
         solutionLink="https://github.com/developers-chrisdh/react-a11y-workshop/tree/feat/accessible-info-and-relations"
       >
-        Als een input geen label heeft, kan dit leiden tot het falen van Success
-        Criterion 1.3.1, omdat het de informatie en relatie tussen het inputveld
+        Als een input geen label heeft, kan dit leiden tot het falen van Succescriterium 1.3.1, omdat het de informatie en relatie tussen het inputveld
         en de bijbehorende context niet duidelijk maakt. Om aan dit criterium te
         voldoen, is het essentieel om inputs te voorzien van duidelijke en
         betekenisvolle labels, zodat gebruikers begrijpen welk type informatie
@@ -54,7 +53,7 @@ const WCAGReport = () => (
         deze tool om te controleren of de contrast waarde groot genoeg is.
         <a href="https://webaim.org/resources/contrastchecker/" target="_blank">
           https://webaim.org/resources/contrastchecker/
-        </a>
+        </a> of de Chrome DevTools
       </WCAGViolation>
 
       <WCAGViolation
@@ -115,6 +114,12 @@ const WCAGReport = () => (
         Op de <Link to="/website/checkout/shipping">checkout pagina </Link> is
         de inhoud van de afrekenen knop niet leesbaar als je inzoomt, waardoor
         het doel van de knop mogelijk niet duidelijk is.
+      </WCAGViolation>
+
+      <WCAGViolation successCriterion="2.1.1" id="10" solutionLink="TODO">
+        Op de <Link to="/website">product pagina </Link> zijn de radiobuttons
+        niet bedienbaar via het toetsenbord. Hierdoor kunnen toetsenbord &
+        screenreader gebruikers deze input niet bedienen.
       </WCAGViolation>
     </div>
   </main>

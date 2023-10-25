@@ -78,7 +78,7 @@ const WCAGViolation = ({
       <h4>Opmerkingen</h4>
       <p>{children}</p>
 
-      {solutionLink && (
+      {false && solutionLink && (
         <>
           <Button onClick={() => setShowSolution(!showSolution)}>
             {showSolution ? 'Verberg oplossing' : 'Toon oplossing'}
