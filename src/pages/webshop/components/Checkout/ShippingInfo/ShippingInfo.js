@@ -1,19 +1,20 @@
 import Webshop from '../../Webshop';
 import './ShippingInfo.scss';
 import image from '../../../assets/product.png';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const KEY_CODE_ESCAPE = 'Escape';
 
 const ShippingInfo = () => {
+  const inputRef = useRef();
   const [showDialog, setShowDialog] = useState(false);
 
-  const onCloseByKeyboard = React.useCallback((event) => {
+  const onCloseByKeyboard = (event) => {
     if (event.code === KEY_CODE_ESCAPE) {
       setShowDialog(false);
     }
-  }, []);
+  };
 
   useEffect(() => {
     document.addEventListener('keyup', onCloseByKeyboard);
@@ -22,6 +23,12 @@ const ShippingInfo = () => {
       document.removeEventListener('keyup', onCloseByKeyboard);
     };
   }, [onCloseByKeyboard]);
+
+  useEffect(() => {
+    if (showDialog && inputRef) {
+      inputRef.current.focus();
+    }
+  }, [showDialog]);
 
   return (
     <Webshop>
@@ -126,7 +133,7 @@ const ShippingInfo = () => {
             </button>
             <h2>Gebruik coupon</h2>
             <div className="coupon">
-              <input type="text" placeholder="Coupon code" />
+              <input ref={inputRef} type="text" placeholder="Coupon code" />
               <button>Voeg toe</button>
             </div>
           </div>
