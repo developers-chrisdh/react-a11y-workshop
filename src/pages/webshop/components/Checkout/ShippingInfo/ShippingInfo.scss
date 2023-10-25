@@ -104,6 +104,8 @@
     padding: 10px 0;
 
     button {
+      // Het gebruik van een goed kleur contrast helpt mensen met beperkt zicht of mensen met kleurenblindheid.
+      // Doordat teksten en grafische content doordoor makkelijker te lezen of te onderscheiden zijn.
       color: $mainColorDark;
       border: none;
       font-weight: 600;
