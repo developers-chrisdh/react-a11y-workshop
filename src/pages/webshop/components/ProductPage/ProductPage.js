@@ -27,6 +27,7 @@ const ProductPage = () => {
     <Webshop>
       <div className="container product-page">
         <div className="product-information">
+          {/* Door een alt attribute in te vullen met een goede tekst kunnen screenreader gebruikers horen wat er op de pagina te zien is */}
           <img src={productimage} alt="Product afbeelding" />
           <p>
             Geheel hand gemaakt met natuurlijke sojawas, Candleaf is gemaakt
