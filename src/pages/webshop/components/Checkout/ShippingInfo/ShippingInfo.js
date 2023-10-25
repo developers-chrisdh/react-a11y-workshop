@@ -11,6 +11,8 @@ const ShippingInfo = () => {
   const [showDialog, setShowDialog] = useState(false);
 
   const onCloseByKeyboard = (event) => {
+    // Elk element moet je kunnen bereiken en verlaten d.m.v. toetsenbord navigatie.
+    // Escape is een gebruikelijke toets voor het verlaten van een dialog.
     if (event.code === KEY_CODE_ESCAPE) {
       setShowDialog(false);
     }
@@ -26,6 +28,8 @@ const ShippingInfo = () => {
 
   useEffect(() => {
     if (showDialog && inputRef) {
+      // Door direct de focus op het input element in de dialog te plaatsen kunnen
+      // zowel screenreader gebruikers als niet screenreader gebruikers gelijk de input invullen.
       inputRef.current.focus();
     }
   }, [showDialog]);
@@ -132,6 +136,7 @@ const ShippingInfo = () => {
               &times;
             </button>
             <h2>Gebruik coupon</h2>
+            {/* De dialog moet d.m.v. toetsenbord navigatie bereikbaar zijn. In dit geval zorgde de tabIndex er voor dat het niet bereikbaar was voor toetsenbord navigatie. */}
             <div className="coupon">
               <input ref={inputRef} type="text" placeholder="Coupon code" />
               <button>Voeg toe</button>
