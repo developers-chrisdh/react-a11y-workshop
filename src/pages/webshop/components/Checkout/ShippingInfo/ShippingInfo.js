@@ -31,6 +31,14 @@ const ShippingInfo = () => {
               <h2>Verzend adres</h2>
               <div>
                 <div>
+                  {/* Het gebruik van labels helpt gebruikers met ondersteunende technologieen,
+                  zoals screenreaders, het formulier te begrijpen.
+                  Het helpt mensen met cognitieve stoornissen om te weten wat de velden zijn in
+                  het formulier als ze het aan het invullen zijn.
+                  
+                  Maar het help ook gebruikers zonder beperkingen, bijvoorbeeld als het formulier
+                  door de browser al is ingevuld met informatie van formulieren uit het verleden.
+                  Zonder label zou je in dat geval niet zien waar een input voor is, en of de gegevens kloppen. */}
                   <label htmlFor="firstname">Voornaam</label>
                   <input type="text" id="firstname" />
                 </div>
