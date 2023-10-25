@@ -3,20 +3,34 @@
 .product-page {
   @include minPageHeight;
   display: flex;
+  gap: 32px;
   padding: 50px 0 60px;
   color: $grayDark;
   box-sizing: border-box;
 
-  .shop-actions {
-    width: 100%;
-  }
-
   .product-information {
-    margin-right: 35px;
+    img {
+      max-width: 520px;
+    }
+    h4 {
+      font-size: 24px;
+      margin-top: 16px;
+    }
+
+    h6 {
+      font-size: 16px;
+      margin: 0;
+    }
+
     p {
-      font-size: 1.4em;
-      text-align: center;
-      font-weight: bold;
+      max-width: 600px;
+      margin-top: 2px;
+
+      &:first-of-type {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+      }
 
       &:last-child {
         color: $mainColor;
@@ -28,9 +42,7 @@
     margin-bottom: 20px;
   }
   .purchase-details {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
     p {
       padding: 0 5px;
       color: $grayMediumDark;
@@ -51,6 +63,19 @@
       border-radius: 7px;
       padding: 10px 15px;
       width: 100%;
+      max-width: 520px;
+
+      h1, h2, h3, h4, h4, h5, h6 {
+        margin-top: 8px;
+        margin-bottom: 2px;
+        text-align: left;
+        font-size: 18px;
+      }
+
+      h5, h6 {
+        font-size: 14px;
+        color: #555;
+      }
 
       div {
         padding: 7px 0;
@@ -59,6 +84,10 @@
       span {
         color: $greenLight;
         margin: 0 8px 0 5px;
+      }
+
+      table {
+        margin-bottom: 8px;
       }
     }
   }
@@ -71,6 +100,7 @@
     @include textBig();
     color: $mainColor;
     width: 35%;
+    margin-bottom: 16px;
   }
 
   button {
