@@ -25,37 +25,28 @@ const ProductPage = () => {
 
   return (
     <Webshop>
-      <div className="container product-page">
-        <div className="product-information">
-          <img src={productimage} alt="" />
-          <p>
-            Geheel hand gemaakt met natuurlijke sojawas, Candleaf is gemaakt
-            voor jouw geluksmomenten.
-          </p>
-          <p>🚚 GRATIS BEZORGING</p>
-        </div>
+      <div className='container product-page'>
+        <div className='shop-actions'>
+          <div className='product-name'>Spaced Mint Candleaf</div>
 
-        <div className="shop-actions">
-          <div className="product-name">Spaced Mint Candleaf</div>
+          <div className='purchase-details'>
+            <div className='product-price'>&euro; 9,99</div>
 
-          <div className="purchase-details">
-            <div className="product-price">&euro; 9,99</div>
-
-            <div className="purchase-actions">
+            <div className='purchase-actions'>
               <PurchaseOption
                 value={PURCHASE_TYPE.oneTime}
                 isChecked={purchaseType === PURCHASE_TYPE.oneTime}
                 onPurchageTypeChange={onPurchageTypeChange}
-                title="Eenmalige aankoop"
+                title='Eenmalige aankoop'
               />
 
               <PurchaseOption
                 value={PURCHASE_TYPE.subscription}
                 isChecked={purchaseType === PURCHASE_TYPE.subscription}
                 onPurchageTypeChange={onPurchageTypeChange}
-                title="Abonneer voor maandelijkse bezorging"
-                description="Abonneer nu en krijg 10% korting op elke bestelling. De
-              korting wordt toegepast in het afrekenproces."
+                title='Abonneer voor maandelijkse bezorging'
+                description='Abonneer nu en krijg 10% korting op elke bestelling. De
+              korting wordt toegepast in het afrekenproces.'
                 link={{
                   url: '#',
                   // In deze situatie gaf alleen "lees meer" niet genoeg context om de actie begrijpelijk te maken
@@ -68,7 +59,10 @@ const ProductPage = () => {
               </button>
             </div>
 
-            <div className="product-details">
+
+            <div className='product-details'>
+              <h4>Product specificaties</h4>
+              <h6>Materiaal & Geur</h6>
               <table>
                 <tr>
                   <td>Was:</td>
@@ -88,6 +82,7 @@ const ProductPage = () => {
                   </td>
                 </tr>
               </table>
+              <h6>Meer specs</h6>
               <table>
                 <tr>
                   <td>Brandtijd:</td>
@@ -106,6 +101,48 @@ const ProductPage = () => {
               </table>
             </div>
           </div>
+        </div>
+        <div className='product-information'>
+          <img src={productimage} alt='' />
+          <h4>Product omschrijving</h4>
+          <p>
+            Stap binnen in de betoverende wereld van ontspanning en frisheid met onze "Spaced Mint Candleaf" luxe
+            geurkaars. Deze meesterlijk vervaardigde kaars belooft niet alleen een heerlijk aroma, maar ook een unieke
+            sfeer die je zintuigen zal prikkelen.
+          </p>
+
+          <strong>Geurprofiel:</strong>
+
+          <p>
+            Laat je betoveren door de verkwikkende geur van "Spaced Mint Candleaf." De kaars begint met de verfrissende
+            tonen van pepermunt en eucalyptusblad, die overgaan in een hart van levendige groene bladeren en een vleugje
+            kruidige basilicum. De basisnoten van cederhout zorgen voor een aardse diepte die je meeneemt op een reis
+            door de natuur.
+          </p>
+
+          <strong>Kwaliteit en Duurzaamheid:</strong>
+          <p>
+            Elke "Spaced Mint Candleaf" geurkaars wordt met de hand vervaardigd met behulp van hoogwaardige sojawas en
+            een katoenen lont. Deze duurzame materialen bieden niet alleen een schonere verbranding, maar minimaliseren
+            ook roetvorming. Onze kaarsen zijn milieuvriendelijk en vrij van schadelijke stoffen.
+          </p>
+
+          <strong>Elegante Verpakking:</strong>
+          <p>
+            De "Spaced Mint Candleaf" geurkaars wordt gepresenteerd in een stijlvol glazen vat met een eigentijds
+            ontworpen label. De minimalistische uitstraling past naadloos in elk interieur en maakt het tot een prachtig
+            cadeau voor jezelf of voor anderen.
+          </p>
+          <strong>
+            Toepassingen:
+          </strong>
+          <p>
+          Deze veelzijdige geurkaars is geschikt voor allerlei gelegenheden. Of je nu een rustgevend bad neemt, een
+          romantisch diner hebt, of gewoon je dagelijkse leven wat op wilt fleuren, "Spaced Mint Candleaf" voegt een
+          vleugje elegantie toe.
+          </p>
+
+          <p className="bezorging">🚚 GRATIS BEZORGING</p>
         </div>
       </div>
     </Webshop>
