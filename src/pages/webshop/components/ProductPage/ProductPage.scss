@@ -2,18 +2,39 @@
 
 .product-page {
   @include minPageHeight;
-  display: flex;
-  gap: 32px;
-  padding: 50px 0 60px;
-  color: $grayDark;
-  box-sizing: border-box;
+  .product-display {
+    display: flex;
+    gap: 32px;
+    padding: 50px 0 60px;
+    color: $grayDark;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h4,
+  h5,
+  h6 {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  h5,
+  h6 {
+    font-size: 14px;
+    color: #555;
+  }
 
   .product-information {
     img {
       max-width: 520px;
     }
     h4 {
-      font-size: 24px;
+      font-size: 18px;
       margin-top: 16px;
     }
 
@@ -26,13 +47,7 @@
       max-width: 600px;
       margin-top: 2px;
 
-      &:first-of-type {
-        font-size: 18px;
-        font-style: italic;
-        font-weight: 600;
-      }
-
-      &:last-child {
+      &.delivery {
         color: $mainColor;
       }
     }
@@ -41,8 +56,60 @@
     @include textBig();
     margin-bottom: 20px;
   }
-  .purchase-details {
+  .product-details {
+    border: solid 1px $grayLight;
+    border-radius: 7px;
+    padding: 10px 15px;
+    width: 100%;
 
+    * {
+      max-width: none;
+    }
+
+    div {
+      padding: 7px 0;
+    }
+
+    span {
+      color: $greenLight;
+      margin: 0 8px 0 5px;
+    }
+
+    table {
+      margin: 0 auto 8px;
+    }
+  }
+
+  .product-description {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      width: 50%;
+      margin: 30px 0;
+      &:first-child {
+        width: 100%;
+        text-align: center;
+        max-width: 720px;
+        margin: 50px auto 20px;
+        p {
+          border: none;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 600;
+          padding: 0;
+        }
+      }
+      p {
+        box-sizing: border-box;
+        border-left: solid 2px $mainColor;
+        padding: 0 50px 0 10px;
+      }
+    }
+  }
+  .purchase-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     p {
       padding: 0 5px;
       color: $grayMediumDark;
@@ -57,45 +124,12 @@
       width: 65%;
     }
 
-    .product-details {
-      margin-top: 50px;
-      border: solid 1px $grayLight;
-      border-radius: 7px;
-      padding: 10px 15px;
-      width: 100%;
-      max-width: 520px;
-
-      h1, h2, h3, h4, h4, h5, h6 {
-        margin-top: 8px;
-        margin-bottom: 2px;
-        text-align: left;
-        font-size: 18px;
-      }
-
-      h5, h6 {
-        font-size: 14px;
-        color: #555;
-      }
-
-      div {
-        padding: 7px 0;
-      }
-
-      span {
-        color: $greenLight;
-        margin: 0 8px 0 5px;
-      }
-
-      table {
-        margin-bottom: 8px;
-      }
+    .product-price {
+      @include textBig();
+      color: $mainColor;
+      width: 35%;
+      margin-bottom: 16px;
     }
-  }
-  .product-price {
-    @include textBig();
-    color: $mainColor;
-    width: 35%;
-    margin-bottom: 16px;
   }
 
   button {
