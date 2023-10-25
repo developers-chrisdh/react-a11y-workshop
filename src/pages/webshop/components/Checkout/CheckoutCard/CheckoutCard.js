@@ -12,6 +12,7 @@ const Checkout = () => {
     <Webshop>
       <div className="container checkout-page">
         <div className="header">
+          {/* Een goede hiërarchische structuur van de headings helpt screenreader gebruikers de hiërarchie en content van de website te begrijpen  */}
           <h1>Winkelwagen</h1>
           <Link to="/webshop">Verder winkelen</Link>
         </div>
