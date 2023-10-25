@@ -36,6 +36,11 @@ const ProductPage = () => {
         </div>
 
         <div className="shop-actions">
+          {/* Screenreader gebruikers kunnen van heading naar heading navigeren om zo
+          een idee te krijgen van de content van de pagina, of waar ze op de painga moeten zijn,
+          zonder elk element op te moeten lezen.
+          Door gebruik te maken van headings help je screenreader gebruikers op een efficientere
+          manier je website of applicatie te gebruiken. */}
           <h1 className="product-name">Spaced Mint Candleaf</h1>
 
           <div className="purchase-details">
