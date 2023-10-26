@@ -32,6 +32,7 @@ const CheckoutItem = ({ price, onTotalPriceChange }) => {
       <div className="product">
         <img src={image} alt="" />
         <div className="details">
+          {/* Een heading was in dit geval niet nodig. Dit is een item in de lijst, niet een titel op de pagina. */}
           <div className="product-name">Spiced Mint Candleaf</div>
           <span>Verwijder</span>
         </div>
