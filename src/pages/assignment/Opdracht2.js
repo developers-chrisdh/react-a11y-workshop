@@ -84,8 +84,8 @@ const Opdracht2 = () => (
         De relevante bestanden voor de webshop waarin je gaat werken vind je in
         de map <code>/src/pages/webshop</code>
         <br />
-        Oplossingen zullen aanpassingen in de html / css zijn. Je hoeft niet de
-        complete webshop te verbouwen.
+        Oplossingen zullen aanpassingen in de html / css / js zijn. Je hoeft
+        niet de complete webshop te verbouwen.
       </p>
     </Collapsible>
     <Link to="/website">
