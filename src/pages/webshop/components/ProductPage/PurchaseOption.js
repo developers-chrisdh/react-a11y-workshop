@@ -12,7 +12,7 @@ const PurchaseOption = (props) => {
     >
       <div className="radio-item" htmlFor={value}>
         <span className={`radiobutton ${isChecked ? 'checked' : ''}`} />
-        {title}
+        <span>{title}</span>
         {description && <p>{description}</p>}
       </div>
       {link && <Link to={link.url}>{link.label}</Link>}
