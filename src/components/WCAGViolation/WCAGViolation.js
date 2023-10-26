@@ -86,7 +86,7 @@ const WCAGViolation = ({
             {showSolution ? 'Verberg oplossing' : 'Toon oplossing'}
           </Button>
           {showSolution && (
-            <a href={solutionLink} target="_blank">
+            <a href={solutionLink} target="_blank"  rel="noreferrer">
               {solutionLink}
             </a>
           )}
