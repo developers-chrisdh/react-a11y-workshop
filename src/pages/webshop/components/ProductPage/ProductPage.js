@@ -54,7 +54,9 @@ const ProductPage = () => {
               korting wordt toegepast in het afrekenproces."
                   link={{
                     url: '#',
-                    label: 'Lees meer.',
+                    // In deze situatie gaf alleen "lees meer" niet genoeg context om de actie begrijpelijk te maken
+                    // Door simpelweg de tekst aan te vullen met het doel van de tekst voldoen we aan de WCAG richtlijn
+                    label: 'Lees meer over het abonnement.',
                   }}
                 />
                 <button onClick={onButtonClick}>
