@@ -51,7 +51,7 @@ const WCAGReport = () => (
         contrast. WCAG 2.0 level AA vereist een contrast ratio van minimaal
         4.5:1 voor normale tekst en 3:1 voor grote tekst. Gebruik bijvoorbeeld
         deze tool om te controleren of de contrast waarde groot genoeg is.
-        <a href="https://webaim.org/resources/contrastchecker/" target="_blank">
+        <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noreferrer">
           https://webaim.org/resources/contrastchecker/
         </a> of de Chrome DevTools
       </WCAGViolation>

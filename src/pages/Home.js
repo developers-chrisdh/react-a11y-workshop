@@ -49,13 +49,13 @@ export const Home = () => (
         <h2>Nuttige links</h2>
         <ul>
           <li>
-            <a href="https://www.w3.org/TR/WCAG21/" target="_blank">https://www.w3.org/TR/WCAG21/</a>
+            <a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noreferrer">https://www.w3.org/TR/WCAG21/</a>
           </li>
           <li>
-            <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Contrast checker tool</a>
+            <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noreferrer">Contrast checker tool</a>
           </li>
           <li>
-            <a href="https://en.wikipedia.org/wiki/Web_accessibility" target="_blank">Web accessibility op wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/Web_accessibility" target="_blank" rel="noreferrer">Web accessibility op wikipedia</a>
           </li>
         </ul>
       </div>
