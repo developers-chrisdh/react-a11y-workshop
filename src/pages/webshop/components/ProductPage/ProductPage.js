@@ -69,39 +69,44 @@ const ProductPage = () => {
           <h4>Product specificaties</h4>
           <h6>Materiaal & Geur</h6>
           <table>
-            <tr>
-              <td>Was:</td>
-              <td>
-                <span>
-                  Sojawas die zorgt voor een rookarme, consistente verbranding
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td>Geur:</td>
-              <td>
-                <span>
-                  Hoogwaardige ingrediënten met natuurlijke essentiële oliën
-                </span>
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                {/* Het ontbreken van <th> zorgt ervoor dat de screenreader de labels en de bijbehorende waardes niet aan elkaar kan koppelen */}
+                <th>Was:</th>
+                <td>
+                  <span>
+                    Sojawas die zorgt voor een rookarme, consistente verbranding
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th>Geur:</th>
+                <td>
+                  <span>
+                    Hoogwaardige ingrediënten met natuurlijke essentiële oliën
+                  </span>
+                </td>
+              </tr>
+            </tbody>
           </table>
           <h6>Meer specs</h6>
           <table>
-            <tr>
-              <td>Brandtijd:</td>
-              <td>
-                <span>70-75 uur</span>
-              </td>
-              <td>Afmeting:</td>
-              <td>
-                <span>10cm x 5cm</span>
-              </td>
-              <td>Gewicht:</td>
-              <td>
-                <span>400g</span>
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Brandtijd:</th>
+                <td>
+                  <span>70-75 uur</span>
+                </td>
+                <th>Afmeting:</th>
+                <td>
+                  <span>10cm x 5cm</span>
+                </td>
+                <th>Gewicht:</th>
+                <td>
+                  <span>400g</span>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
