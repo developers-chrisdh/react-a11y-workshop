@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom';
 import Button from '../../components/button/Button';
-// import Collapsible from '../../components/collapsible/Collapsible';
+import Collapsible from '../../components/collapsible/Collapsible';
 
 const Assignment = () => (
   <main>
     <h1>Introductie</h1>
-    {/* <Collapsible title="Wat is toegankelijkheid?"> */}
+     <Collapsible title="Wat is toegankelijkheid?">
     Toegankelijkheid houdt in dat je bij het maken van producten, diensten,
     omgevingen of informatie er rekening mee houdt dat het product voor
     iedereen, inclusief mensen met een beperking, gemakkelijk te gebruiken en te
     begrijpen is. Het doel is dat iedereen hiermee gelijke kansen en gelijke
     toegang krijgt.
-    {/* </Collapsible> */}
-    {/* <Collapsible title="Wat leer je in deze workshop?"> */}
+     </Collapsible>
+     <Collapsible title="Wat leer je in deze workshop?">
     <ul>
       <li>
         Analyseren van een website om te identificeren waar problemen met
@@ -24,8 +24,8 @@ const Assignment = () => (
         verbeteren.
       </li>
     </ul>
-    {/* </Collapsible> */}
-    {/* <Collapsible title="Waarom zou je je website toegankelijk willen maken?"> */}
+     </Collapsible>
+     <Collapsible title="Waarom zou je je website toegankelijk willen maken?">
     <li>
       Inclusiviteit: Je wilt dat je applicatie voor iedereen bruikbaar is. Dit
       betekent dat je ondersteuning wilt bieden voor ondersteunende technologie
@@ -48,7 +48,7 @@ const Assignment = () => (
       Het kan een juridisch eis zijn. Voor overheidsorganisaties is het
       verplicht om te werken aan toegankelijkheid.
     </li>
-    {/* </Collapsible> */}
+     </Collapsible>
     <h2>Voorbeeld gebruik screenreader </h2>
     <div>
       <iframe
