@@ -58,6 +58,7 @@ const ProductPage = () => {
                   }}
                 />
                 <button onClick={onButtonClick}>
+                  {/* eslint-disable-next-line */}
                   <img src={cardWhite} />
                 </button>
               </div>
