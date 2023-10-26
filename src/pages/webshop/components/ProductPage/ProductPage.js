@@ -28,7 +28,8 @@ const ProductPage = () => {
       <div className="container product-page">
         <div className="product-display">
           <div className="product-information">
-            <img src={productimage} alt="" />
+            {/* Door een alt attribute in te vullen met een goede tekst kunnen screenreader gebruikers horen wat er op de pagina te zien is */}
+            <img src={productimage} alt="Product afbeelding" />
           </div>
 
           <div className="shop-actions">
