@@ -53,7 +53,7 @@ const Opdracht2 = () => (
       <ul>
         <li>
           Voor- en achtergrond moet een goed kleurcontrast hebben. Minstens 4.5
-          tegen 1
+          op 1
         </li>
         <li>Content moet een goede heading structuur hebben</li>
         <li>
@@ -63,7 +63,7 @@ const Opdracht2 = () => (
       </ul>
       <strong>AAA</strong>
       <ul>
-        <li>Kleur contrast van minstens 7 tegen 1</li>
+        <li>Kleur contrast van minstens 7 op 1</li>
         <li>Opgenomen videos moeten gebarentaal vertaling hebben</li>
         <li>
           Opgenomen videos moeten een uitgebreide audio beschrijving hebben.
