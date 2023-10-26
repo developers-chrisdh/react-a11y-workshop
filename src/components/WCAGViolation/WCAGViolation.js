@@ -56,11 +56,13 @@ const WCAGViolation = ({
   level = 'niveau A',
   successCriterion = '2.2.2',
   solutionLink,
+  id
 }) => {
   const [showSolution, setShowSolution] = useState(false);
 
   return (
     <div className="card">
+      <span className="opdrachtId">{ id }</span>
       <blockquote>
         <span className="label">{level}</span>
         <h4>
