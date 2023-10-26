@@ -32,7 +32,7 @@ const ProductPage = () => {
           </div>
 
           <div className="shop-actions">
-            <div className="product-name">Spaced Mint Candleaf</div>
+            <h1 className="product-name">Spaced Mint Candleaf</h1>
 
             <div className="purchase-details">
               <div className="product-price">&euro; 9,99</div>
@@ -65,8 +65,8 @@ const ProductPage = () => {
           </div>
         </div>
         <div className="product-details">
-          <h4>Product specificaties</h4>
-          <h6>Materiaal & Geur</h6>
+          <h2>Product specificaties</h2>
+          <h3>Materiaal & Geur</h3>
           <table>
             <tr>
               <td>Was:</td>
@@ -85,7 +85,7 @@ const ProductPage = () => {
               </td>
             </tr>
           </table>
-          <h6>Meer specs</h6>
+          <h3>Meer specs</h3>
           <table>
             <tr>
               <td>Brandtijd:</td>
@@ -106,7 +106,7 @@ const ProductPage = () => {
 
         <div className="product-description">
           <div>
-            <h4>Product omschrijving</h4>
+            <h2>Product omschrijving</h2>
             <p>
               Stap binnen in de betoverende wereld van ontspanning en frisheid
               met onze "Spaced Mint Candleaf" luxe geurkaars. Deze meesterlijk
@@ -116,7 +116,7 @@ const ProductPage = () => {
           </div>
 
           <div>
-            <strong>Geurprofiel:</strong>
+            <h3>Geurprofiel:</h3>
             <p>
               Laat je betoveren door de verkwikkende geur van "Spaced Mint
               Candleaf." De kaars begint met de verfrissende tonen van pepermunt
@@ -128,7 +128,7 @@ const ProductPage = () => {
           </div>
 
           <div>
-            <strong>Kwaliteit en Duurzaamheid:</strong>
+            <h3>Kwaliteit en Duurzaamheid:</h3>
             <p>
               Elke "Spaced Mint Candleaf" geurkaars wordt met de hand
               vervaardigd met behulp van hoogwaardige sojawas en een katoenen
@@ -139,7 +139,7 @@ const ProductPage = () => {
           </div>
 
           <div>
-            <strong>Elegante Verpakking:</strong>
+            <h3>Elegante Verpakking:</h3>
             <p>
               De "Spaced Mint Candleaf" geurkaars wordt gepresenteerd in een
               stijlvol glazen vat met een eigentijds ontworpen label. De
@@ -148,7 +148,7 @@ const ProductPage = () => {
             </p>
           </div>
           <div>
-            <strong>Toepassingen:</strong>
+            <h3>Toepassingen:</h3>
             <p>
               Deze veelzijdige geurkaars is geschikt voor allerlei gelegenheden.
               Of je nu een rustgevend bad neemt, een romantisch diner hebt, of
