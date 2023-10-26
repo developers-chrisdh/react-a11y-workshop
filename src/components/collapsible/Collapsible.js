@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Button from '../button/Button';
 import './Collapsible.scss';
 
 const Collapsible = ({ title, children}) => {
