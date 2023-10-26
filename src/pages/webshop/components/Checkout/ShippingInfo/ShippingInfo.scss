@@ -88,8 +88,8 @@
     button {
       @include button;
       width: 24%;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      // Door de teskt overflow werd de tekst afgekapt wanneer de tekst vergroot is. Dat zorgt ervoor dat mensen die
+      // de pagina met vergrootte tekst bekijken niet de hele tekst kunnen lezen.
     }
   }
   .shopping-list {
