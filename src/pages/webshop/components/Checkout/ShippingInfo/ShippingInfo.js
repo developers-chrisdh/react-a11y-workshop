@@ -107,7 +107,7 @@ const ShippingInfo = () => {
               onClick={() => setShowDialog(false)}
               tabIndex={-1}
             >
-              x
+              &times;
             </button>
             <h2>Gebruik coupon</h2>
             <div className="coupon">

@@ -10,14 +10,20 @@ const Header = () => (
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/opdracht">Opdracht</NavLink>
+        <NavLink to="/intro">Intro</NavLink>
       </li>
       <li>
-        <NavLink to="/website">Website</NavLink>
+        <NavLink to="/opdracht-1">Opdracht 1</NavLink>
       </li>
       <li>
-        <NavLink to="/wcag-rapport">WCAG Rapport</NavLink>
+        <NavLink to="/opdracht-2">Opdracht 2</NavLink>
       </li>
+      <li>
+        <NavLink to="/website">Candleaf Webshop</NavLink>
+      </li>
+      {/*<li>*/}
+      {/*  <NavLink to="/wcag-rapport">WCAG Rapport</NavLink>*/}
+      {/*</li>*/}
     </ul>
   </nav>
 );
