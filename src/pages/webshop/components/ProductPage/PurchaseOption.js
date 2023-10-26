@@ -8,6 +8,7 @@ const PurchaseOption = (props) => {
   return (
     <div className={`purchase-type ${isChecked ? 'selected' : ''}`}>
       <label htmlFor={value}>
+        {/* Door gebruik te maken van een echte radio button kan het ook met het toetsenboard bediend worden. */}
         <input
           type="radio"
           value={value}
